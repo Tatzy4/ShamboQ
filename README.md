@@ -1,7 +1,7 @@
 # ShamboQ
 
 [![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](https://github.com/username/ShamboQ/releases)
-[![Spigot](https://img.shields.io/badge/spigot-1.19--1.21-orange.svg)](https://www.spigotmc.org/resources/)
+[![Spigot](https://img.shields.io/badge/spigot-1.16--1.21-orange.svg)](https://www.spigotmc.org/resources/)
 [![License](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
 ShamboQ is an advanced server queue system for Minecraft servers (Bukkit/Spigot/Paper) with extensive optimization features. It helps manage player flow between your lobby server and main gameplay server in a BungeeCord/Velocity proxy network.
