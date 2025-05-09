@@ -1,0 +1,95 @@
+# ShamboQ Configuration
+# developed by Shambonoor Ent.
+# https://szam.boo/
+# https://discord.gg/wUmVUBc7rv
+
+# Queue settings
+queue:
+  # Enable or disable the queue system
+  enabled: true
+  # Time in seconds to wait before sending to SMP
+  time: 10
+  # Name of the SMP server to connect to
+  smp-server: "smp"
+  # Message to show when queue is disabled
+  disabled-message: "Queue is currently disabled"
+  # Whether to show the disabled message
+  show-disabled-message: true
+  # How often to show the notification in seconds
+  notification-interval: 5
+
+# Connection settings
+connection:
+  # Maximum number of retry attempts when connection fails
+  max-retries: 3
+  # Time in seconds to wait between retry attempts
+  retry-delay: 5
+
+# Messages for various plugin functions
+messages:
+  queue_enabled: "&aQueue has been enabled!"
+  queue_disabled: "&cQueue has been disabled!"
+  no_permission: "&cYou don't have permission to use this command!"
+  queue_time_set: "&aQueue time set to &e%d &aseconds!"
+  invalid_number: "&cInvalid number: &e%s"
+  message_set: "&aQueue disabled message set to: &e%s"
+  notifications_enabled: "&aQueue disabled notifications have been enabled!"
+  notifications_disabled: "&cQueue disabled notifications have been disabled!"
+  player_not_found: "&cPlayer not found: &e%s"
+  sending_player: "&aSending &e%s &ato &e%s&a!"
+  config_reloaded: "&aShamboQ configuration reloaded!"
+  welcome_title: "&6Welcome to the Server!"
+  welcome_subtitle: "&eYou will be transferred to the SMP server in &6%d &eseconds"
+  countdown: "&eTransfer in &6%d &eseconds..."
+  queue_disabled_title: "&cQueue Disabled"
+  usage_settime: "&cUsage: /shamboq settime <seconds>"
+  usage_message: "&cUsage: /shamboq message <message>"
+  usage_send: "&cUsage: /shamboq send <player>"
+  queue_disabled_player: "&cQueue system has been disabled. You are no longer in queue."
+  frozen_player: "&cYou are currently frozen in the lobby."
+
+  # New connection error messages
+  connection_failed: "&cConnection to SMP server failed. Retrying..."
+  connection_error: "&cCould not connect to SMP server. &eError: %s"
+  connection_timeout: "&cConnection timed out. Retrying in %d seconds..."
+  max_retries_reached: "&cCould not connect after %d attempts. Please try again later."
+  back_in_queue: "&eYou've been placed back in the queue due to connection issues."
+
+# Spawn location in the End
+spawn:
+  x: -1.5
+  y: 64
+  z: 0.5
+
+# Example of sounds that will be played randomly
+sounds:
+  - "ENTITY_ENDERMAN_DEATH"
+  - "ENTITY_ENDER_DRAGON_AMBIENT"
+  - "ENTITY_ENDER_DRAGON_DEATH"
+  - "BLOCK_END_PORTAL_FRAME_FILL"
+  - "BLOCK_END_PORTAL_SPAWN"
+  - "BLOCK_END_GATEWAY_SPAWN"
+  - "ENTITY_LIGHTNING_BOLT_THUNDER"
+  - "ENTITY_LIGHTNING_BOLT_IMPACT"
+  - "ENTITY_GENERIC_EXPLODE"
+
+# Optimization settings for reducing server resource usage
+optimization:
+  # Basic Optimization
+  chunk-management: true
+  disable-mobs: true
+  reduce-view-distance: true
+  queue-view-distance: 3
+  no-tick-zone: true
+
+  # Advanced
+  disable-terrain-generation: true
+  disable-player-ticks: true
+  spectator-mode: false
+  dedicated-thread-pool: true
+  thread-pool-size: 1
+  aggressive-chunk-management: true
+  max-loaded-chunks: 5
+
+# Debug mode (enables verbose logging)
+debug: false

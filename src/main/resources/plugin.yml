@@ -1,0 +1,20 @@
+name: ShamboQ
+version: 2.0.0
+main: shamboo.shamboq.ShamboQ
+api-version: 1.20
+description: Lightweight Queue Plugin - ShamboQ
+author: Shambonoor Ent.
+website: https://szam.boo/
+commands:
+  shamboq:
+    description: Main ShamboQ command
+    usage: /shamboq <command>
+    aliases: [sq]
+    permission: shamboq.admin
+permissions:
+  shamboq.admin:
+    description: Allows administration of the queue system
+    default: op
+  shamboq.bypass:
+    description: Allows bypassing the queue system
+    default: op
